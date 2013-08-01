@@ -60,6 +60,11 @@ Add the following to your config.xml
         <param name="APP_ID" value="..." />
         <param name="APP_NAME" value="..." />
     </gap:plugin>
+    
+Add the javascript scripts included in the plugin into your index.html
+
+    <script src="cdv-plugin-fb-connect.js"></script>
+    <script src="facebook-js-sdk.js"></script> 
 
 ## Manual Android Installation
 
