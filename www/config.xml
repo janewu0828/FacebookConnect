@@ -64,8 +64,8 @@
     -->
     <!-- FB Connect Section -->
     <gap:plugin name="com.phonegap.plugins.facebookconnect">
-        <param name="APP_ID" value="149909718537834" /> <!-- FB App ID-->
-        <param name="APP_NAME" value="TestW" /> <!-- FB App Namespace-->
+        <param name="APP_ID" value="1389432371282293" /> <!-- FB App ID-->
+        <param name="APP_NAME" value="TestWW" /> <!-- FB App Namespace-->
     </gap:plugin>
 
     <gap:platforms>
