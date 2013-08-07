@@ -97,7 +97,7 @@
                 FB.login(
                          function(response) {
                           alert('b+'+response.authResponse);
-                         if (response.session) {
+                         if (response.authResponse) {
                          alert('logged in');
                          } else {
                           alert('c');
