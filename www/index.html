@@ -93,11 +93,14 @@
             }
             
             function login() {
+              alert('a');
                 FB.login(
                          function(response) {
-                         if (response.session) {
+                          alert('b+'+response.authResponse);
+                         if (response.authResponse) {
                          alert('logged in');
                          } else {
+                          alert('c');
                          alert('not logged in');
                          }
                          },
