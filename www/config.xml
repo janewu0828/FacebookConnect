@@ -3,7 +3,7 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.phonegap.pgbfbtest"
+        id        = "com.phonegap.facebookconnect"
         version   = "1.0.0">
 
     <name>FacebookConnect</name>
@@ -74,8 +74,7 @@
         <gap:platform name="symbian.wrt"/>
         <gap:platform name="blackberry" project="widgets"/>
     </gap:platforms>
-    
-    <access origin="*" />
+        
 
     <!-- Define app icon for each platform. -->
     <icon src="icon.png" />
@@ -113,6 +112,7 @@
 
         Otherwise, you can specify specific domains:
     -->
+    <access origin="*" />
     <!--  <access origin="http://127.0.0.1*"/>--> <!-- allow local pages -->
     <!--
         <access origin="http://phonegap.com" />                    - allow any secure requests to http://phonegap.com/
