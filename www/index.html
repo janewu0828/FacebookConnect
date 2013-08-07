@@ -10,6 +10,7 @@
 		<button onclick="logout()">Logout</button>
 		<button onclick="facebookWallPost()">facebookWallPost</button>
 		<button onclick="publishStoryFriend()">friendstory</button>
+    <button onclick="requestsdialog">Requests Dialog</button>
         
         <div id="data">loading ...</div>
         
@@ -108,7 +109,15 @@
                          );
             }
 			
-			
+			function requestsdialog() {
+          console.log('Debug requestssialog');
+        var params = {
+            method: 'apprequests',
+            message: 'My Great Request'
+          };
+        console.log(params);
+          FB.ui(params, function(obj) { console.log(obj);});
+      }
 			function facebookWallPost() {
 			    console.log('Debug 1');
 				var params = {
