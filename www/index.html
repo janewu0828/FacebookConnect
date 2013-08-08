@@ -122,7 +122,8 @@
             //data:o
           };
         console.log(paramsR);
-          FB.ui(paramsR, function(objR) { console.log(objR);});
+          //FB.ui(paramsR, function(objR) { console.log(objR);});
+		  FB.api(paramsR, function(objR) { console.log(objR);});
       }
 	  function requestsDialog2() {
        			alert("rrroo2");
