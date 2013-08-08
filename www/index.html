@@ -117,10 +117,10 @@
             message: '訊息My Great Request',
             filters: "[{name: '線上好友', user_ids: ['app_users']}]", 
             title:"可自定標題requests",
-            data:o
+            //data:o
           };
         console.log(paramsR);
-          FB.ui(paramsR, function(obj) { console.log(obj);});
+          FB.ui(paramsR, function(objR) { console.log(objR);});
       }
 			function facebookWallPost() {
 			    console.log('Debug 1');
