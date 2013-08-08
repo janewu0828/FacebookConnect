@@ -10,6 +10,7 @@
 		<button onclick="logout()">Logout</button>
 		<button onclick="facebookWallPost()">facebookWallPost</button>
     	<button onclick="requestsDialog()">Requests Dialog</button>
+        <button onclick="sendDialog()">Send Dialog</button>
         <button onclick="publishStoryFriend()">friendstory</button>
             
         <div id="data">loading ...</div>
@@ -109,27 +110,37 @@
                          );
             }
 			
-			function requestsDialog() {/*
-       			alert("rrrooofw");
-          console.log('Debug requestssialog');
-        var paramsR = {
-            method: 'apprequests',
-            message: '訊息My Great Request',
-            filters: "[{name: '線上好友', user_ids: ['app_users']}]", 
-            title:"可自定標題requests",
-			//to: {user_ids: ['app_users']}
-            //data:o
-          };
-        console.log(paramsR);
-          //FB.ui(paramsR, function(objR) { console.log(objR);});
-		  FB.api(paramsR, function(objR) { console.log(objR);});*/
-		  FB.ui({method: 'apprequests',
-  				message: 'My Great Request',
-  				filters: "[{name: '線上好友', user_ids:[<?php echo join(',',$aF); ?>]}]}]", 
-				}, requestCallback);
-      	}
+			function requestsDialog() {
+       			alert("rrrooofwg");
+          		/*console.log('Debug requestsDialog');
+				var paramsR = {
+					method: 'apprequests',
+					message: '訊息My Great Request',
+					filters: "[{name: '線上好友', user_ids: ['app_users']}]", 
+					title:"可自定標題requests",
+					//to: {user_ids: ['app_users']}
+					//data:o
+				  };
+				console.log(paramsR);
+				  //FB.ui(paramsR, function(objR) { console.log(objR);});
+				  FB.api(paramsR, function(objR) { console.log(objR);});*/
+				  FB.ui({method: 'apprequests',
+						message: 'My Great Request',
+						filters: "[{name: '線上好友', user_ids:[<?php echo join(',',$aF); ?>]}]}]", 
+						}, requestCallback);
+      		}
 	  
-	  
+		  	function sendDialog() {
+				alert("sendq");
+			  	console.log('Debug sendDialog');
+				var paramsS = {
+					method: 'send',
+					link:'http://www.nytimes.com/2011/06/15/arts/people-argue-just-to-win-scholars-assert.html',
+				};
+				console.log(paramsS);
+			  	FB.ui(paramsS, function(objS) { console.log(objS);}); 
+			}
+			
 			function facebookWallPost() {
 			    console.log('Debug 1');
 				var params = {
