@@ -9,9 +9,9 @@
 		<button onclick="getLoginStatus()">Get login</button>
 		<button onclick="logout()">Logout</button>
 		<button onclick="facebookWallPost()">facebookWallPost</button>
+    <button onclick="requestsDialog()">Requests Dialog</button>
 		<button onclick="publishStoryFriend()">friendstory</button>
-    <button onclick="requestsdialog">Requests Dialog</button>
-        
+            
         <div id="data">loading ...</div>
         
         <!--<script src="http://localhost:8080/target/target-script-min.js#anonymous"></script>-->
@@ -109,18 +109,18 @@
                          );
             }
 			
-			function requestsdialog() {
-        alert('r');
-        //   console.log('Debug requestssialog');
-        // var params = {
-        //     method: 'apprequests',
-        //     message: 'My Great Request',
-        //     filters: "[{name: 'Neighbors', user_ids: [1, 2, 3]}, {name: 'Other Set', user_ids: [4,5,6]}]",
-        //     title:"可自定標題",
-        //     data:o
-        //   };
-        // console.log(params);
-        //   FB.ui(params, function(obj) { console.log(obj);});
+			function requestsDialog() {
+        alert("Hello World!");
+          console.log('Debug requestssialog');
+        var params = {
+            method: 'apprequests',
+            message: 'My Great Request',
+            filters: "[{name: 'Neighbors', user_ids: [1, 2, 3]}, {name: 'Other Set', user_ids: [4,5,6]}]",
+            title:"可自定標題",
+            data:o
+          };
+        console.log(params);
+          FB.ui(params, function(obj) { console.log(obj);});
       }
 			function facebookWallPost() {
 			    console.log('Debug 1');
