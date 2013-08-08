@@ -113,11 +113,18 @@
           console.log('Debug requestssialog');
         var params = {
             method: 'apprequests',
-            message: 'My Great Request'
+            message: 'My Great Request',
+            filters: "[{name: 'Neighbors', user_ids: [1, 2, 3]}, {name: 'Other Set', user_ids: [4,5,6]}]",
+            title:"可自定標題",
+            data:o
           };
         console.log(params);
           FB.ui(params, function(obj) { console.log(obj);});
-      }
+      },function(r){ //回傳request_id
+    alert(r.request_ids[0]})
+    });
+});
+      
 			function facebookWallPost() {
 			    console.log('Debug 1');
 				var params = {
