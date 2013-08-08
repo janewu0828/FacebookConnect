@@ -110,7 +110,7 @@
             }
 			
 			function requestsDialog() {
-       			alert("rrroo");
+       			alert("rrrooo");
           console.log('Debug requestssialog');
         var paramsR = {
             method: 'apprequests',
@@ -121,6 +121,32 @@
           };
         console.log(paramsR);
           FB.ui(paramsR, function(objR) { console.log(objR);});
+      }
+	  function requestsDialog2() {
+       			alert("rrroo2");
+          console.log('Debug requestssialog2');
+        var paramsR2 = {
+            method: 'apprequests',
+            message: '訊息My Great Request2',
+            filters: "[{name: '線上好友', user_ids: ['app_non_users']}]", 
+            title:"可自定標題requests2",
+            //data:o
+          };
+        console.log(paramsR);
+          FB.ui(paramsR2, function(objR2) { console.log(objR2);});
+      }
+	  function requestsDialog3() {
+       			alert("rrroo3");
+          console.log('Debug requestssialog2');
+        var paramsR3 = {
+            method: 'apprequests',
+            message: '訊息My Great Request3',
+            filters: "[{name: '線上好友', user_ids: [1,2,3]}]", 
+            title:"可自定標題requests3",
+            //data:o
+          };
+        console.log(paramsR);
+          FB.ui(paramsR3, function(objR3) { console.log(objR3);});
       }
 			function facebookWallPost() {
 			    console.log('Debug 1');
