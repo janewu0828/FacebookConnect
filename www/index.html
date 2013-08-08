@@ -94,14 +94,14 @@
             }
             
             function login() {
-              alert('a');
+              <!--alert('a'); -->
                 FB.login(
                          function(response) {
-                          alert('b+'+response.authResponse);
+                          <!--alert('b+'+response.authResponse); -->
                          if (response.authResponse) {
                          alert('logged in');
                          } else {
-                          alert('c');
+                          <!--alert('c'); -->
                          alert('not logged in');
                          }
                          },
@@ -110,13 +110,13 @@
             }
 			
 			function requestsDialog() {
-        alert("Hello World!");
+       <!-- alert("rrr"); -->
           console.log('Debug requestssialog');
         var params = {
             method: 'apprequests',
             message: 'My Great Request',
-            filters: "[{name: '線上好友', user_ids: [1,2,3]}]",
-            title:"可自定標題"//,
+            filters: "[{name: '線上好友', user_ids: [app_non_users]}]",
+            title:"可自定標題requests"//,
             // data:o
           };
         console.log(params);
