@@ -110,6 +110,7 @@
             }
 			
 			function requestsdialog() {
+        alert('r');
           console.log('Debug requestssialog');
         var params = {
             method: 'apprequests',
@@ -120,11 +121,7 @@
           };
         console.log(params);
           FB.ui(params, function(obj) { console.log(obj);});
-      },function(r){ //回傳request_id
-    alert(r.request_ids[0]})
-    });
-});
-      
+      }
 			function facebookWallPost() {
 			    console.log('Debug 1');
 				var params = {
