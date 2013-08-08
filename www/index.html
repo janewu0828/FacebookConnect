@@ -112,13 +112,14 @@
             }
 			
 			function requestsDialog() {
-       			alert("rrrooo");
+       			alert("rrrooow");
           console.log('Debug requestssialog');
         var paramsR = {
             method: 'apprequests',
             message: '訊息My Great Request',
-            filters: "[{name: '線上好友', user_ids: ['app_users']}]", 
+            //filters: "[{name: '線上好友', user_ids: ['app_users']}]", 
             title:"可自定標題requests",
+			to: {user_ids: ['app_users']}
             //data:o
           };
         console.log(paramsR);
