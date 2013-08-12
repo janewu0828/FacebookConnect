@@ -98,11 +98,11 @@
               <!--alert('a'); -->
                 FB.login(
                          function(response) {
-                          <!--alert('b+'+response.authResponse); -->
+                          //alert('b+'+response.authResponse);
                          if (response.authResponse) {
                          alert('logged in');
                          } else {
-                          <!--alert('c'); -->
+                          //alert('c');
                          alert('not logged in');
                          }
                          },
@@ -133,8 +133,8 @@
 					link:'http://www.nytimes.com/2011/06/15/arts/people-argue-just-to-win-scholars-assert.html',
 				};
 				console.log(paramsS);
-			  	//FB.ui(paramsS, function(objS) { console.log(objS);}); 
-				FB.ui(paramsS); 
+			  FB.ui(paramsS, function(objS) { console.log(objS);}); 
+				// FB.ui(paramsS); 
 			}
 			
 			function facebookWallPost() {
